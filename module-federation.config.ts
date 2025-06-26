@@ -4,5 +4,12 @@ export const mfConfig = {
 	exposes: {
 		'./IncrementButton': './src/IncrementButton',
 	},
-	shared: ['react', 'react-dom'],
+	shared: {
+		react: {
+			singleton: true,
+		},
+		'react-dom': {
+			singleton: true,
+		},
+	},
 };
